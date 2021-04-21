@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rana's Kuppi </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-size: 20px;
+            padding: 0%;
+            margin: 0%;
+            background: #000;
+        }
+
+        .headline {
+            text-align: center;
+            top: 10px;
+            color: rgb(255, 255, 255);
+            font-family: 'Smythe', cursive;
+            font-size: 40px;
+            margin: auto;
+            }   
+        .container{
+            height: 90vh;
+            width: 90vw;
+            margin: auto;
+        }
+        .correctNumberContainer{
+            height: 150px;
+            width: 100%;
+        }
+        .guessNumberContainer{
+            height: 300px;
+            width: 100%;
+            margin-top: 50px;
+            padding-top: 50px;
+            border-radius: 10px;
+            border: 1px solid  seashell ;
+        }
+        .correctNumber{
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border: 10px solid rgb(255, 251, 251);
+            border-radius: 50px 20px;
+            font-size: 80px;
+            text-align: center;
+            line-height: 120px;
+            font-family: 'Smythe', cursive;
+            color:rgb(241, 241, 241);
+        }
+        .userInput{
+            width: 50%;
+            height: 300px;
+            float: left;
+            border-right: 1px solid seashell;
+        }
+        
+        .userInput input {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(0, 0, 0);
+            font-size: 59px;
+            text-align: center;
+            margin: auto;
+            font-family: 'Smythe', cursive;
+            color:rgb(255, 255, 255);
+        }
+        .userInput button {
+            width: 209px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            font-size: 59px;
+            font-family: 'Smythe', cursive;
+            color:rgb(0, 0, 0);
+        }
+        .messageContainer{
+            font-size: 49px;
+            font-family: 'Smythe', cursive;
+            color:rgb(248, 248, 248);
+            text-align: center;
+            padding-top: 15px;
+        }
+        .aginBtn{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgb(255, 255, 255);
+            font-size: 39px;
+            font-family: 'Smythe', cursive;
+            color:rgb(0, 0, 0);
+        }
+    </style>
+
+
+
+<body>
+    <div class="container">
+        <button class="aginBtn">
+            again!
+        </button>
+        <div class="headline">
+            <h1>
+                GUESS MY NUMBER !
+            </h1>
+        </div> 
+        <div class="correctNumberContainer">
+            <div class="correctNumber">
+               Loading....
+            </div>
+        </div>
+        <div class="guessNumberContainer">
+            <div class="userInput">
+                <div style="width: 50%;margin: auto;">
+                    <input type="number" placeholder="00" class="inputNumber" >
+                    <br>
+                    <br>
+                    <button>
+                        GUESS!
+                    </button>
+                </div>
+            </div>
+            <div class="messageContainer">
+                <div class="message">
+                  Loading....
+                </div>
+                <div class="score">
+                    Loading....
+                </div>
+                <div class="highScore">
+                    Loading....
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="./script.js"></script>
+</body>
+
+</html>
